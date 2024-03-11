@@ -16,3 +16,21 @@
         font-weight: 500;
     }
 }
+
+.button-primary {
+    @apply px-3 py-1 bg-purple-400 text-white rounded-full hover:brightness-110
+}
+
+.button-secondary {
+    @apply px-10 py-2 border-2 border-purple-400 text-purple-400 rounded-full hover:brightness-110 focus:bg-purple-400 focus:text-white hover:bg-purple-400 hover:text-white
+}
+
+.aurora {
+    background-color: #fff;
+    background-image: 
+    radial-gradient(at top left, #F0ACE0, transparent),
+    radial-gradient(at top right, #FFA4B2, transparent),
+    radial-gradient(at bottom left, #A7D3F2, transparent);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

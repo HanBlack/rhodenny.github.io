@@ -2,6 +2,9 @@
 import './../styles/global.css'
 
 import Header from '../components/Header.astro'
+
+let { title } = Astro.props
+title = title ? 'Rhodenny - ' + title : 'Rhodenny'
 ---
 
 <html lang="en">
@@ -10,14 +13,19 @@ import Header from '../components/Header.astro'
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{title}</title>
 	</head>
-	<body class="bg-slate-200">
-		<div class="fixed top-0 left-0 right-0 bottom-0 bg-black/2 backdrop-blur hidden" data-overlay>
+	<body class="min-h-screen overflow-hidden flex flex-col">
+		<div
+			class="fixed top-0 left-0 right-0 bottom-0 bg-black/10 backdrop-blur hidden z-20"
+			data-overlay
+		>
+		</div>
+		<div
+			class="fixed top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-gray-200 via-50% via-stone-100 to-gray-200 -z-20"
+		>
 		</div>
 		<Header />
-		<!-- Include the Header component here -->
 		<slot />
-		<!-- Inject individual page content here -->
 	</body>
 </html>
