@@ -1,0 +1,96 @@
+<style>
+	.list {
+		display: flex;
+		gap: 8px;
+
+		list-style: none;
+		overflow-x: scroll;
+		scroll-snap-type: x mandatory;
+
+		width: 50%;
+	}
+
+	.item {
+		flex-shrink: 0;
+		width: 100%;
+		height: 100%;
+
+		background-color: #fff;
+
+		scroll-snap-align: center;
+	}
+
+	.content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+
+		font-family: sans-serif;
+		font-size: 64px;
+		font-weight: bold;
+	}
+	.list-wrapper {
+		position: relative;
+	}
+
+	.button {
+		position: absolute;
+		top: 50%;
+
+		width: 3rem;
+		height: 3rem;
+
+		transform: translateY(-50%);
+	}
+
+	.button--previous {
+		left: 1.5rem;
+
+		transform: rotate(180deg);
+	}
+
+	.button--next {
+		right: 1.5rem;
+	}
+</style>
+
+<div class="list-wrapper">
+	<ul class="list">
+		<li class="item">
+			<div class="content">
+				<img src="./images/ennie_combo_1.jpg" alt="" />
+			</div>
+		</li>
+		<li class="item"><div class="content"><img src="./images/ennie_combo_2.jpg" alt="" /></div></li>
+		<li class="item"><div class="content"><img src="./images/ennie_combo_3.jpg" alt="" /></div></li>
+		<li class="item"><div class="content"><img src="./images/ennie_combo_4.jpg" alt="" /></div></li>
+	</ul>
+	<button class="button button--previous" type="button">➜</button>
+	<button class="button button--next" type="button">➜</button>
+</div>
+
+<script lang="js">
+	const buttonPrevious = document.querySelector('.button--previous')
+	const buttonNext = document.querySelector('.button--next')
+	const list = document.querySelector('.list')
+
+	const itemWidth = list.querySelector('.item').offsetWidth
+
+	buttonPrevious.addEventListener('click', () => handleClick('previous'))
+	buttonNext.addEventListener('click', () => handleClick('next'))
+
+	function handleClick(direction) {
+		if (direction === 'previous') {
+			list.scrollTo({
+				left: list.scrollLeft - itemWidth,
+				behavior: 'smooth'
+			})
+		} else {
+			list.scrollTo({
+				left: list.scrollLeft + itemWidth,
+				behavior: 'smooth'
+			})
+		}
+	}
+</script>

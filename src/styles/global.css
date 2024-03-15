@@ -25,6 +25,21 @@
     @apply px-10 py-2 border-2 border-purple-400 text-purple-400 rounded-full hover:brightness-110 focus:bg-purple-400 focus:text-white hover:bg-purple-400 hover:text-white
 }
 
+.slideInDown {
+    animation: 1s ease-out 0s 1 slideInDown;
+}
+
+@keyframes slideInDown {
+    0% {
+      opacity: .2;
+      transform: translateY(-20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 .aurora {
     background-color: #fff;
     background-image: 

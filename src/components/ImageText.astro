@@ -1,0 +1,39 @@
+---
+export interface Props {
+	text: string
+	image: string
+	image2?: string
+	order?: string
+}
+
+let { text, image, image2, order } = Astro.props as Props
+
+if (order === 'right') {
+	order = 'md:order-2'
+} else {
+	order = ''
+}
+---
+
+<div
+	class="max-w-screen-lg flex flex-col md:flex-row gap-4 md:gap-10 justify-center items-center md:aspect-video rounded-xl"
+>
+	<div class={`max-w-xs flex justify-end items-center ${order} ${image2 ? 'gap-4' : ''}`}>
+		<img src={image} class="block
+	object-contain rounded-lg" alt="" />
+		{
+			image2 && (
+				<img
+					src={image2}
+					class="block
+	object-contain rounded-lg"
+					alt=""
+				/>
+			)
+		}
+	</div>
+
+	<div class="max-w-md flex justify-start items-center">
+		{text}
+	</div>
+</div>
