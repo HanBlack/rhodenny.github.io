@@ -3,7 +3,14 @@ import MainLayout from '../layouts/MainLayout.astro'
 
 import ImageText from '../components/ImageText.astro'
 import Carousel from '../components/Carousel.astro'
-import Carousel2 from '../components/Carousel2.astro'
+const images = [
+	'./images/ennie_combo_1.jpg',
+	'./images/ennie_combo_2.jpg',
+	'./images/ennie_combo_3.jpg',
+	'./images/ennie_combo_4.jpg',
+	'./images/ennie_combo_5.jpg',
+	'./images/ennie_combo_6.jpg'
+]
 ---
 
 <MainLayout title="O nás">
@@ -40,13 +47,6 @@ import Carousel2 from '../components/Carousel2.astro'
 			image="./images/ennie_skolka 2.jpg"
 		/>
 	</div>
-	<!-- <Carousel /> -->
-	<Carousel2 />
-	<!--     
-	<img src="./images/ennie_combo_1.jpg" alt="" />
-	<img src="./images/ennie_combo_2.jpg" alt="" />
-	<img src="./images/ennie_combo_3.jpg" alt="" />
-	<img src="./images/ennie_combo_4.jpg" alt="" />
-	<img src="./images/ennie_combo_5.jpg" alt="" />
-	<img src="./images/ennie_combo_6.jpg" alt="" /> -->
+
+	<Carousel images={images} />
 </MainLayout>
