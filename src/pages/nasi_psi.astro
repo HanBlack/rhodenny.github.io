@@ -13,7 +13,7 @@ const pseci = [
 		{
 			pseci &&
 				pseci.map((p) => (
-					<div class="w-full max-w-md h-full flex flex-col lg:flex-row shadow-sm items-stretch bg-red-500">
+					<div class="w-full max-w-md h-full flex flex-col lg:flex-row shadow-sm items-stretch">
 						<div class="flex-1">
 							<img
 								src={p.image}
@@ -34,5 +34,12 @@ const pseci = [
 					</div>
 				))
 		}
+	</div>
+	<div
+		class="flex flex-col relative max-w-screen-lg mx-auto lg:flex-row justify-center items-center md:w-full lg:w-1/2"
+	>
+		<div class="flex 1">
+			<img src="./images/nasi_psi_all.jpg" alt="" class="rounded-lg" />
+		</div>
 	</div>
 </MainLayout>
