@@ -4,10 +4,8 @@ import ImageText from '../components/ImageText.astro'
 ---
 
 <MainLayout>
-	<div class="w-full h-full flex flex-col items-center">
-		<div class="flex">
-			<img src="./images/plagat_vrh_a_02.jpg" alt="" />
-			<img src="./images/plagat_vrh_a.jpg" alt="" />
+	<div class="w-full h-full flex flex-col items-center px-4 py-4">
+		<div class="flex flex-col lg:flex-row justify-center items-center lg:w-2/3 mx-auto py-4">
 			<p>
 				Mým velkým přáním bylo najít pro Enny pejska střední postavy. Tím začalo moje hledání. Hugo
 				se díky spoustě zdravotních testů, barvě srsti, postavě a nádherné hlavičce vryl do mojí
@@ -15,6 +13,18 @@ import ImageText from '../components/ImageText.astro'
 				zcela přesvědčila, že je to ten pravý. Hugo pochází z chov. stanice Kaweria z vrhu A
 				<a href="https://www.kaweria.com/">https://www.kaweria.com/</a>
 			</p>
+		</div>
+		<div class="flex flex-col lg:flex-row justify-center items-center gap-4">
+			<img
+				src="./images/plagat_vrh_a_02.jpg"
+				alt=""
+				class="rounded-lg object-cover lg:h-[30rem] lg:w-[40rem] md:w-full"
+			/>
+			<img
+				src="./images/plagat_vrh_a.jpg"
+				alt=""
+				class="rounded-lg object-cover lg:h-[30rem] lg:w-[40rem] md:w-full"
+			/>
 		</div>
 		<ImageText
 			text="Otec Huga : MultiCh. Maiden's Kalahari Kandy"
@@ -25,51 +35,100 @@ import ImageText from '../components/ImageText.astro'
 			image="./images/hugo_matka.jpg"
 			order="right"
 		/>
-		<p>Amos Adhiambo</p>
-		<p>Váha: 675 g</p>
-		<p>Standart</p>
-		<img src="./images/amos_vrh_a.jpg" alt="" />
-		<img src="./images/amos_vrh_a_02.jpg" alt="" />
-		<img src="./images/amos_vrh_a_03.jpg" alt="" />
-		<img src="./images/amos_vrh_a_04.jpg" alt="" />
-		<br />
-		<p>Alfie Sabiha</p>
-		<p>Váha: 590g</p>
-		<p>Standart</p>
-		<img src="./images/alfie_vrh_a.jpg" alt="" />
-		<img src="./images/alfie_vrh_a_02.jpg" alt="" />
-		<img src="./images/alfie_vrh_a_03.jpg" alt="" />
-		<img src="./images/alfie_vrh_a_04.jpg" alt="" />
-		<img src="./images/alfie_vrh_a_05.jpg" alt="" />
-		<p>Agnes Yunna</p>
-		<p>Váha: 580g</p>
-		<p>Standart</p>
-		<img src="./images/agnes_vrh_a_01.jpg" alt="" />
-		<img src="./images/agnes_vrh_a_02.jpg" alt="" />
-		<img src="./images/agnes_vrh_a_03.jpg" alt="" />
-		<img src="./images/agnes_vrh_a_04.jpg" alt="" />
-		<p>Aron Black</p>
-		<p>605g</p>
-		<p>Standart</p>
-		<img src="./images/aron_vrh_a_01.jpg" alt="" />
-		<img src="./images/aron_vrh_a_02.jpg" alt="" />
-		<img src="./images/aron_vrh_a_03.jpg" alt="" />
-		<img src="./images/aron_vrh_a_04.jpg" alt="" />
-		<img src="./images/aron_vrh_a_05.jpg" alt="" />
-		<p>Alvin Shadow</p>
-		<p>550g</p>
-		<p>Standart</p>
-		<img src="./images/alvin_vrh_a_01.jpg" alt="" />
-		<img src="./images/alvin_vrh_a_02.jpg" alt="" />
-		<img src="./images/alvin_vrh_a_03.jpg" alt="" />
-		<img src="./images/alvin_vrh_a_04.jpg" alt="" />
-		<img src="./images/alvin_vrh_a_05.jpg" alt="" />
-		<p>Amali Joy</p>
-		<p>690g</p>
-		<p>Standart</p>
-		<img src="./images/amali_vrh_a_01.jpg" alt="" />
-		<img src="./images/amali_vrh_a_02.jpg" alt="" />
-		<img src="./images/amali_vrh_a_03.jpg" alt="" />
-		<img src="./images/amali_vrh_a_04.jpg" alt="" />
+		<div class="flex flex-col justify-center items-center py-8">
+			<p class="font-bold text-lg">Amos Adhiambo</p>
+			<div class="flex flex-col lg:flex-row items-center gap-4">
+				<p>Váha: 675 g</p>
+				<p>Standart</p>
+			</div>
+			<div
+				class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
+			>
+				<img src="./images/amos_vrh_a.jpg" alt="" />
+				<img src="./images/amos_vrh_a_02.jpg" alt="" />
+				<img src="./images/amos_vrh_a_03.jpg" alt="" />
+			</div>
+			<img src="./images/amos_vrh_a_04.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
+		</div>
+		<div class="flex flex-col justify-center items-center py-8">
+			<p class="font-bold text-lg">Alfie Sabiha</p>
+			<div class="flex flex-col lg:flex-row items-center gap-4">
+				<p>Váha: 590g</p>
+				<p>Standart</p>
+			</div>
+			<div
+				class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
+			>
+				<img src="./images/alfie_vrh_a.jpg" alt="" />
+				<img src="./images/alfie_vrh_a_02.jpg" alt="" />
+				<img src="./images/alfie_vrh_a_03.jpg" alt="" style="object-position: 50% 30%" />
+				<img src="./images/alfie_vrh_a_05.jpg" alt="" />
+			</div>
+			<img src="./images/alfie_vrh_a_04.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
+		</div>
+	</div>
+	<div class="flex flex-col justify-center items-center py-8">
+		<p class="font-bold text-lg">Agnes Yunna</p>
+		<div class="flex flex-col lg:flex-row items-center gap-4">
+			<p>Váha: 580g</p>
+			<p>Standart</p>
+		</div>
+		<div
+			class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
+		>
+			<img src="./images/agnes_vrh_a_01.jpg" alt="" />
+			<img src="./images/agnes_vrh_a_02.jpg" alt="" />
+			<img src="./images/agnes_vrh_a_03.jpg" alt="" />
+		</div>
+
+		<img src="./images/agnes_vrh_a_04.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
+	</div>
+	<div class="flex flex-col justify-center items-center py-8">
+		<p class="font-bold text-lg">Aron Black</p>
+		<div class="flex flex-col lg:flex-row items-center gap-4">
+			<p>605g</p>
+			<p>Standart</p>
+		</div>
+		<div
+			class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
+		>
+			<img src="./images/aron_vrh_a_01.jpg" alt="" />
+			<img src="./images/aron_vrh_a_02.jpg" alt="" />
+			<img src="./images/aron_vrh_a_03.jpg" alt="" />
+			<img src="./images/aron_vrh_a_05.jpg" alt="" />
+		</div>
+		<img src="./images/aron_vrh_a_04.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
+	</div>
+	<div class="flex flex-col justify-center items-center py-8">
+		<p class="font-bold text-lg">Alvin Shadow</p>
+		<div class="flex flex-col lg:flex-row items-center gap-4">
+			<p>550g</p>
+			<p>Standart</p>
+		</div>
+		<div
+			class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
+		>
+			<img src="./images/alvin_vrh_a_01.jpg" alt="" />
+			<img src="./images/alvin_vrh_a_02.jpg" alt="" />
+			<img src="./images/alvin_vrh_a_03.jpg" alt="" />
+			<img src="./images/alvin_vrh_a_05.jpg" alt="" />
+		</div>
+		<img src="./images/alvin_vrh_a_04.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
+	</div>
+	<div class="flex flex-col justify-center items-center py-8">
+		<p class="font-bold text-lg">Amali Joy</p>
+		<div class="flex flex-col lg:flex-row items-center gap-4">
+			<p>690g</p>
+			<p>Standart</p>
+		</div>
+		<div
+			class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
+		>
+			<img src="./images/amali_vrh_a_01.jpg" alt="" />
+			<img src="./images/amali_vrh_a_02.jpg" alt="" />
+			<img src="./images/amali_vrh_a_03.jpg" alt="" style="object-position: 50% 25%" />
+		</div>
+
+		<img src="./images/amali_vrh_a_04.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
 	</div>
 </MainLayout>

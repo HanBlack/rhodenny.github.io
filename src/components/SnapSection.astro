@@ -1,0 +1,45 @@
+---
+export interface Props {
+	title: string
+	description: string
+	backgroundImg: string
+	svg?: any
+}
+
+const { title, description, backgroundImg, svg } = Astro.props as Props
+---
+
+<section
+	class="w-screen h-screen bg-cover bg-center bg-no-repeat bg-fixed snap-center scroll-smooth"
+	style={`background-image: url(/images/${backgroundImg})`}
+>
+	<div class="h-full py-8 w-full flex flex-col justify-between items-center">
+		<div class="pt-60">
+			<h1 class="font-bolder text-xl">{title}</h1>
+			{description}
+		</div>
+		<!-- <div class:list={['ButtonGroup', { isSvg: svg ? true : false }]}>
+			<div class="LeftButton">
+				{leftBtnText}
+			</div>
+			{rightBtnText ? <div class="RightButton">{rightBtnText}</div> : null}
+		</div> -->
+	</div>
+	{
+		svg ? (
+			<div class="block mx-auto mb-1 w-8 aspect-square transition-all ease-in animate-bounce">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+					<rect width="256" height="256" fill="none" />
+					<polyline
+						points="208 96 128 176 48 96"
+						fill="none"
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="16"
+					/>
+				</svg>
+			</div>
+		) : null
+	}
+</section>
