@@ -1,10 +1,9 @@
 ---
-import { changeLanguage } from 'i18next'
-import MainLayout from '../layouts/MainLayout.astro'
-import { translations } from '../locales/translations'
+import MainLayoutEn from './../../layouts/MainLayoutEn.astro'
+import { translations } from './../../locales/translations'
 ---
 
-<MainLayout>
+<MainLayoutEn>
 	<div class="flex-1 grid lg:place-items-center">
 		<div class="flex flex-col lg:flex-row lg:*:flex-1 gap-8 lg:gap-0">
 			<div class="flex flex-col lg:justify-center items-center gap-4">
@@ -12,12 +11,11 @@ import { translations } from '../locales/translations'
 					class="lg:w-1/2 w-full flex flex-col gap-4 justify-center items-center px-2 lg:px-0 slideInDown"
 				>
 					<img
-						src="./images/logo_rhodenyy.png"
+						src="./../../images/logo_rhodenyy.png"
 						alt="Logo"
 						class="block w-full h-auto object-fit-contain"
 					/>
 					<div class="uppercase text-xl lg:text-2xl text-center italic">
-						S psím společníkem objevujeme krásu jednoduchosti a radosti z každodenních okamžiků.
 						{translations.en.index_motive}
 					</div>
 				</div>
@@ -26,11 +24,11 @@ import { translations } from '../locales/translations'
 				class="relative after:hidden lg:after:block after:w-20 after:h-20 after:bg-purple-400 after:absolute after:-top-8 after:-left-6 after:rounded-full after:-z-20 px-2 lg:pr-4 flex-1"
 			>
 				<img
-					src="./images/RRhodenny_index_background.jpg"
+					src="./../../images/RRhodenny_index_background.jpg"
 					alt=""
 					class="w-full h-full lg:h-auto block bg-center object-cover lg:object-contain lg:rounded-l-xl rounded-xl shadow-2xl"
 				/>
 			</div>
 		</div>
 	</div>
-</MainLayout>
+</MainLayoutEn>

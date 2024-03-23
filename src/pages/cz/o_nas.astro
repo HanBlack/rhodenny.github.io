@@ -1,0 +1,33 @@
+---
+import MainLayout from './../../layouts/MainLayout.astro'
+import ImageText from './../../components/ImageText.astro'
+import Carousel from './../../components/Carousel.astro'
+import { translations } from '../../locales/translations'
+
+const images = [
+	'./../../images/ennie_combo_1.jpg',
+	'./../../images/ennie_combo_2.jpg',
+	'./../../images/ennie_combo_3.jpg',
+	'./../../images/ennie_combo_4.jpg',
+	'./../../images/ennie_combo_5.jpg',
+	'./../../images/ennie_combo_6.jpg'
+]
+---
+
+<MainLayout title="O nás">
+	<div class="w-full h-full flex flex-col items-center">
+		<ImageText text={translations.cz.firstDog} image="./../../images/cesar.jpg" />
+		<ImageText text={translations.cz.Sid_dog} image="./../../images/sid 1.jpg" order="right" />
+		<ImageText text={translations.cz.dixa_first} image="./../../images/sid 2.jpg" />
+		<ImageText text={translations.cz.dixa_second} image="./../../images/dixa.jpg" order="right" />
+		<ImageText text={translations.cz.enny_first} image="./../../images/enny_first.jpg" />
+		<ImageText
+			text={translations.cz.enny_second}
+			image="./../../images/ennie_skolka 1.jpg"
+			order="right"
+		/>
+		<ImageText text={translations.cz.enny_third} image="./../../images/ennie_skolka 2.jpg" />
+	</div>
+
+	<Carousel images={images} />
+</MainLayout>

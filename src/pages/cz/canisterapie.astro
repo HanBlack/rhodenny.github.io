@@ -1,0 +1,32 @@
+---
+import MainLayout from './../../layouts/MainLayout.astro'
+import { translations } from '../../locales/translations'
+---
+
+<MainLayout title="Canisterapie">
+	<div>
+		<div class="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-8 py-4 px-8">
+			<div
+				class="flex flex-col lg:justify-center lg:items-end items-center lg:gap-2 gap-2 lg:w-1/4 w-full"
+			>
+				<p>
+					{translations.cz.canisterapie_first}
+				</p>
+			</div>
+			<img src="./../../images/canisterapie_01.jpg" alt="" />
+		</div>
+		<div class="flex flex-col justify-center items-center py-4 px-8">
+			<div class="flex flex-col lg:flex-row justify-center items-center lg:w-1/3">
+				<p>
+					{translations.cz.canisterapie_second}
+				</p>
+			</div>
+		</div>
+		<div class="flex flex-col lg:flex-row justify-center items-center lg:w-full gap-4">
+			<img src="./../../images/canisterapie_03.jpg" alt="" class="rounded-lg" />
+			<img src="./../../images/canisterapie_05.jpg" alt="" class="rounded-lg" />
+			<img src="./../../images/canisterapie_06.jpg" alt="" class="rounded-lg" />
+			<img src="./../../images/canisterapie_07.jpg" alt="" class="rounded-lg" />
+		</div>
+	</div>
+</MainLayout>

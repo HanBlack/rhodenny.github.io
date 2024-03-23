@@ -1,17 +1,18 @@
 ---
-import DogLayout from '../layouts/DogLayout.astro'
-import Carousel from '../components/Carousel.astro'
+import DogLayout from './../../layouts/DogLayout.astro'
+import Carousel from './../../components/Carousel.astro'
+import { translations } from '../../locales/translations'
 
 const images = [
-	'./images/enny_nasi_psi_01.jpg',
-	'./images/enny_nasi_psi_02.jpg',
-	'./images/enny_nasi_psi_03.jpg',
-	'./images/enny_nasi_psi_04.jpg',
-	'./images/enny_nasi_psi_05.jpg',
-	'./images/enny_nasi_psi_06.jpg',
-	'./images/enny_nasi_psi_07.jpg',
-	'./images/enny_nasi_psi_08.jpg',
-	'./images/enny_nasi_psi_09.jpg'
+	'./../../images/enny_nasi_psi_01.jpg',
+	'./../../images/enny_nasi_psi_02.jpg',
+	'./../../images/enny_nasi_psi_03.jpg',
+	'./../../images/enny_nasi_psi_04.jpg',
+	'./../../images/enny_nasi_psi_05.jpg',
+	'./../../images/enny_nasi_psi_06.jpg',
+	'./../../images/enny_nasi_psi_07.jpg',
+	'./../../images/enny_nasi_psi_08.jpg',
+	'./../../images/enny_nasi_psi_09.jpg'
 ]
 ---
 
@@ -24,7 +25,7 @@ const images = [
 		<p>Datum narození: 25.06.2015</p>
 		<p>Výška: 65cm</p>
 		<p>Váha: 38kg</p>
-		<p>plnochrupý, nůžkový kus</p>
+		<p>Plnochrupý, nůžkový kus</p>
 		<p>Pšeničná barva</p>
 		<p>HD: A/A</p>
 		<p>ED: 0/0</p>
@@ -46,11 +47,11 @@ const images = [
 		<p>DLK: 0/0</p>
 		<p>OCD: negativní</p>
 		<p>Chrup: plnochrupá</p>
-		<p>chovná ČKRR 12.9.2010</p>
+		<p>Chovná ČKRR 12.9.2010</p>
 	</div>
 	<img
 		slot="mother_image"
-		src="./images/ashanti_nasi_psi.jpg"
+		src="./../../images/ashanti_nasi_psi.jpg"
 		alt=""
 		class="max-w-sm aspect-square object-top object-cover rounded-lg"
 	/>
@@ -69,7 +70,7 @@ const images = [
 	</div>
 	<img
 		slot="father_image"
-		src="./images/kifahari_nasi_psi.jpg"
+		src="./../../images/kifahari_nasi_psi.jpg"
 		class="max-w-sm aspect-square object-top object-cover rounded-lg"
 		alt=""
 	/>

@@ -1,36 +1,31 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro'
-import Carousel from '../components/Carousel.astro'
+import MainLayout from './../../layouts/MainLayoutEn.astro'
+import Carousel from './../../components/Carousel.astro'
+import { translations } from '../../locales/translations'
 
 const images = [
-	'./images/bayo_vrh_b_01.jpg',
-	'./images/bayo_vrh_b_02.jpg',
-	'./images/bayo_vrh_b_03.jpg',
-	'./images/bayo_vrh_b_04.jpg',
-	'./images/bayo_vrh_b_05.jpg',
-	'./images/bayo_vrh_b_06.jpg',
-	'./images/bayo_vrh_b_07.jpg'
+	'./../../images/bayo_vrh_b_01.jpg',
+	'./../../images/bayo_vrh_b_02.jpg',
+	'./../../images/bayo_vrh_b_03.jpg',
+	'./../../images/bayo_vrh_b_04.jpg',
+	'./../../images/bayo_vrh_b_05.jpg',
+	'./../../images/bayo_vrh_b_06.jpg',
+	'./../../images/bayo_vrh_b_07.jpg'
 ]
 ---
 
-<MainLayout title="Vrh B">
+<MainLayout title="Breed B">
 	<div class="w-full h-full flex flex-col items-center px-4 py-4 gap-4">
 		<div
 			class="flex flex-col lg:justify-center lg:items-end md:items-end items-center lg:gap-2 gap-1 lg:w-3/4 w-full max-w-screen-lg"
 		>
 			<p>
-				Při hledání pejska pro naši Enny jsme netoužili po velké změně. Vrh A se vydařil, štěňátka
-				jsou krásná,veselá, zdravá, nadevše milující své páníčky, proto jsme se rozhodli znovu
-				oslovit paní Majku a požádat ji o krytí s jejím dalším pejskem Charliem, který pochází také
-				z chovatelské stanice Kaweria z vrhu B. Její krásná slova o Charliem: - <i
-					>najveselší psik akého poznám, má štěniatkovské spravanie, to mu ostane asi až do staroby.
-					Je spoločenský, takisto nekonfliktný a agresívným psom sa vyhýba...</i
-				>
+				{translations.en.vrh_vrh_b_undertitle}<i>{translations.en.vrh_vrh_b_italic}</i>
 			</p>
 		</div>
 		<div class="flex flex-col lg:flex-row justify-center items-center gap-4">
 			<img
-				src="./images/vrh_b_plagat.jpg"
+				src="./../../images/vrh_b_plagat.jpg"
 				alt=""
 				class="rounded-lg object-cover lg:h-[30rem] lg:w-[45rem] md:w-full"
 			/>
@@ -39,10 +34,18 @@ const images = [
 
 	<div class="flex flex-col lg:flex-row justify-center items-center gap-4 py-8 px-8">
 		<div class="flex flex-col justify-center items-end">
-			<p>Otec vrhu: Bayo Kendi Kaweria</p>
-			<p>Datum Narození: 04.8.2015</p>
-			<p>Otec: Bayo Bombay of Argos Qwandoya</p>
-			<p>Matka: Tusani Jolly Joelin</p>
+			<p>
+				{translations.en.Charlie_as_father}
+			</p>
+			<p>
+				{translations.en.Charlie_date_of_birth}
+			</p>
+			<p>
+				{translations.en.Charlie_father}
+			</p>
+			<p>
+				{translations.en.Charlie_mother}
+			</p>
 			<p>HD: A/A</p>
 			<p>ED: 0/0</p>
 			<p>OCD: free, LTV: neg.</p>
@@ -57,143 +60,156 @@ const images = [
 	<div class="flex flex-col lg:flex-row justify-center items-center gap-4 *:aspect-[4/3]">
 		<div class="relative grow lg:grow-0">
 			<img
-				src="./images/bombay_vrh_b_02.jpg"
+				src="./../../images/bombay_vrh_b_02.jpg"
 				alt=""
 				class="rounded-lg block w-full h-full object-cover"
 			/>
 			<div class="absolute bottom-0 inset-x-0 bg-black/25 p-2 text-white">
-				<p>Otec Charlieho: Bayo Bombay of Argos Qwandoya</p>
+				<p>{translations.en.Charlie_father}</p>
 				<a class="underline" href="https://www.qwandoya.com">https://www.qwandoya.com</a>
 			</div>
 		</div>
 		<div class="relative grow lg:grow-0">
 			<img
-				src="./images/tusani_vrh_b_01.jpg"
+				src="./../../images/tusani_vrh_b_01.jpg"
 				alt=""
 				class="rounded-lg block w-full h-full object-cover"
 			/>
 			<div class="absolute bottom-0 inset-x-0 bg-black/25 p-2 text-white">
-				<p>Matka Charlieho: Tusani Jolly Joelin</p>
-				<a class="underline" href="https://www.kaweria.com">https://www.kaweria.com</a>
+				<p>
+					{translations.en.Charlie_mother}
+					<a class="underline" href="https://www.kaweria.com">https://www.kaweria.com</a>
+				</p>
 			</div>
 		</div>
 	</div>
-
 	<div class="flex flex-col justify-center items-center md:py-4 lg:py-8">
-		<img src="./images/vrh_b_full_photo_01.jpg" alt="" class="lg:w-1/2 rounded-lg" />
+		<img src="./../../images/vrh_b_full_photo_01.jpg" alt="" class="lg:w-1/2 rounded-lg" />
 	</div>
 	<div class="flex flex-col justify-center items-center py-8">
 		<p class="font-bold text-lg">Bizzete Charlie (Bizi)</p>
 		<div class="flex flex-col lg:flex-row items-center gap-4">
-			<p>Narozena: 4:20</p>
-			<p>Váha: 590g</p>
+			<p>Time of Birth: 4:20</p>
+			<p>Weight: 590g</p>
 			<p>Standart</p>
 		</div>
 		<div
 			class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
 		>
-			<img src="./images/bizzete_vrh_b_01.jpg" alt="" />
-			<img src="./images/bizzete_vrh_b_02.jpg" alt="" />
-			<img src="./images/bizzete_vrh_b_04.jpg" alt="" />
+			<img src="./../../images/bizzete_vrh_b_01.jpg" alt="" />
+			<img src="./../../images/bizzete_vrh_b_02.jpg" alt="" />
+			<img src="./../../images/bizzete_vrh_b_04.jpg" alt="" />
 		</div>
-		<img src="./images/bizzete_vrh_b_03.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
+		<img
+			src="./../../images/bizzete_vrh_b_03.jpg"
+			alt=""
+			class="rounded-lg object-cover lg:w-1/2"
+		/>
 	</div>
 	<div class="flex flex-col justify-center items-center py-8">
 		<p class="font-bold text-lg">Buddy Thabo (Bady)</p>
 		<div class="flex flex-col lg:flex-row items-center gap-4">
-			<p>Narozen: 6h</p>
-			<p>Váha: 580g</p>
+			<p>Time of Birth: 6 a.m</p>
+			<p>Weight: 580g</p>
 			<p>Standart</p>
 		</div>
 		<div
 			class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
 		>
-			<img src="./images/buddy_vrh_b_04.jpg" alt="" />
-			<img src="./images/buddy_vrh_b_02.jpg" alt="" />
-			<img src="./images/buddy_vrh_b_03.jpg" alt="" />
+			<img src="./../../images/buddy_vrh_b_04.jpg" alt="" />
+			<img src="./../../images/buddy_vrh_b_02.jpg" alt="" />
+			<img src="./../../images/buddy_vrh_b_03.jpg" alt="" />
 		</div>
-		<img src="./images/buddy_vrh_b_01.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
+		<img src="./../../images/buddy_vrh_b_01.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
 	</div>
 	<div class="flex flex-col justify-center items-center py-8">
 		<p class="font-bold text-lg">Berttin Zereen (Bertík)</p>
 		<div class="flex flex-col lg:flex-row items-center gap-4">
-			<p>Narozen: 8:20</p>
-			<p>Váha: 580g</p>
+			<p>Time of Birth: 8:20</p>
+			<p>Weight: 580g</p>
 			<p>Standart</p>
 		</div>
 		<div
 			class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
 		>
-			<img src="./images/berttin_vrh_b_01.jpg" alt="" />
-			<img src="./images/berttin_vrh_b_02.jpg" alt="" />
-			<img src="./images/berttin_vrh_b_04.jpg" alt="" />
+			<img src="./../../images/berttin_vrh_b_01.jpg" alt="" />
+			<img src="./../../images/berttin_vrh_b_02.jpg" alt="" />
+			<img src="./../../images/berttin_vrh_b_04.jpg" alt="" />
 		</div>
-		<img src="./images/berttin_vrh_b_03.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
+		<img
+			src="./../../images/berttin_vrh_b_03.jpg"
+			alt=""
+			class="rounded-lg object-cover lg:w-1/2"
+		/>
 	</div>
 	<div class="flex flex-col justify-center items-center py-8">
 		<p class="font-bold text-lg">Berlin Mattien (Matié)</p>
 		<div class="flex flex-col lg:flex-row items-center gap-4">
-			<p>Narozen: 9:35</p>
-			<p>Váha: 580g</p>
+			<p>Time of Birth: 9:35</p>
+			<p>Weight: 580g</p>
 			<p>Standart</p>
 		</div>
 		<div
 			class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
 		>
-			<img src="./images/berlin_vrh_b_01.jpg" alt="" />
-			<img src="./images/berlin_vrh_b_02.jpg" alt="" />
-			<img src="./images/berlin_vrh_b_03.jpg" alt="" />
-			<img src="./images/berlin_vrh_b_04.jpg" alt="" />
+			<img src="./../../images/berlin_vrh_b_01.jpg" alt="" />
+			<img src="./../../images/berlin_vrh_b_02.jpg" alt="" />
+			<img src="./../../images/berlin_vrh_b_03.jpg" alt="" />
+			<img src="./../../images/berlin_vrh_b_04.jpg" alt="" />
 		</div>
-		<img src="./images/berlin_vrh_b_05.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
+		<img src="./../../images/berlin_vrh_b_05.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
 	</div>
 	<div class="flex flex-col justify-center items-center py-8">
 		<p class="font-bold text-lg">Balwina Mia (Balwi)</p>
 		<div class="flex flex-col lg:flex-row items-center gap-4">
-			<p>Narozena: 13:01</p>
-			<p>Váha: 575g</p>
+			<p>Time of Birth: 13:01</p>
+			<p>Weight: 575g</p>
 			<p>Standart</p>
 		</div>
 		<div
 			class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
 		>
-			<img src="./images/balwina_vrh_b_01.jpg" alt="" />
-			<img src="./images/balwina_vrh_b_02.jpg" alt="" />
-			<img src="./images/balwina_vrh_b_04.jpg" alt="" />
+			<img src="./../../images/balwina_vrh_b_01.jpg" alt="" />
+			<img src="./../../images/balwina_vrh_b_02.jpg" alt="" />
+			<img src="./../../images/balwina_vrh_b_04.jpg" alt="" />
 		</div>
-		<img src="./images/balwina_vrh_b_03.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
+		<img
+			src="./../../images/balwina_vrh_b_03.jpg"
+			alt=""
+			class="rounded-lg object-cover lg:w-1/2"
+		/>
 	</div>
 	<div class="flex flex-col justify-center items-center py-8">
 		<p class="font-bold text-lg">Bethany Tene (Bety)</p>
 		<div class="flex flex-col lg:flex-row items-center gap-4">
-			<p>Narozena: 20:10</p>
-			<p>Váha: 500g</p>
+			<p>Time of Birth: 20:10</p>
+			<p>Weight: 500g</p>
 			<p>Standart</p>
 		</div>
 		<div
 			class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
 		>
-			<img src="./images/bety_vrh_b_01.jpg" alt="" />
-			<img src="./images/bety_vrh_b_02.jpg" alt="" />
-			<img src="./images/bety_vrh_b_04.jpg" alt="" />
+			<img src="./../../images/bety_vrh_b_01.jpg" alt="" />
+			<img src="./../../images/bety_vrh_b_02.jpg" alt="" />
+			<img src="./../../images/bety_vrh_b_04.jpg" alt="" />
 		</div>
-		<img src="./images/bety_vrh_b_03.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
+		<img src="./../../images/bety_vrh_b_03.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
 	</div>
 	<div class="flex flex-col justify-center items-center py-8">
 		<p class="font-bold text-lg">Berica Sally (Beri)</p>
 		<div class="flex flex-col lg:flex-row items-center gap-4">
-			<p>Narozena: 21:45</p>
-			<p>Váha: 500g</p>
+			<p>Time of Birth: 21:45</p>
+			<p>Weight: 500g</p>
 			<p>Standart</p>
 		</div>
 		<div
 			class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
 		>
-			<img src="./images/beri_vrh_b_01.jpg" alt="" />
-			<img src="./images/beri_vrh_b_02.jpg" alt="" />
-			<img src="./images/beri_vrh_b_03.jpg" alt="" />
-			<img src="./images/beri_vrh_b_05.jpg" alt="" />
+			<img src="./../../images/beri_vrh_b_01.jpg" alt="" />
+			<img src="./../../images/beri_vrh_b_02.jpg" alt="" />
+			<img src="./../../images/beri_vrh_b_03.jpg" alt="" />
+			<img src="./../../images/beri_vrh_b_05.jpg" alt="" />
 		</div>
-		<img src="./images/beri_vrh_b_04.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
+		<img src="./../../images/beri_vrh_b_04.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
 	</div>
 </MainLayout>

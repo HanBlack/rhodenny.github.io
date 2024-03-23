@@ -2,12 +2,12 @@
 const currentPath = new URL(Astro.request.url).pathname
 
 const links = [
-	{ text: 'O nás', href: '/cz/o_nas' },
-	{ text: 'Naši psi', href: '/cz/nasi_psi' },
-	{ text: 'Štěňata', href: '/cz/vrh' },
-	{ text: 'Krycí psi', href: '/cz/kryci_psi' },
-	{ text: 'Canisterapie', href: '/cz/canisterapie' },
-	{ text: 'Dokumenty', href: '/cz/dokumenty' }
+	{ text: 'About us', href: '/en/o_nas' },
+	{ text: 'Our dogs', href: '/en/nasi_psi' },
+	{ text: 'Puppies', href: '/en/vrh' },
+	{ text: 'Stud dogs', href: '/en/kryci_psi' },
+	{ text: 'Canisterapy', href: '/en/canisterapie' },
+	{ text: 'Documents', href: '/en/dokumenty' }
 ]
 ---
 
@@ -16,7 +16,7 @@ const links = [
 	class="bg-stone-100 z-30"
 >
 	<nav class="h-16 flex items-center justify-between px-6">
-		<a href="/cz/" class="flex items-center h-full w-fit z-40">
+		<a href="/en/" class="flex items-center h-full w-fit z-40">
 			<span class="tracking-wider">Rhodenny</span>
 		</a>
 
@@ -39,8 +39,8 @@ const links = [
 		<div class="hidden md:flex gap-4">
 			<button class="w-5 h-auto">
 				<div>
-					<a href="/en/">
-						<img src="./../images/czech-republic.png" alt="" class="block" />
+					<a href="/cz/">
+						<img src="./../images/united-kingdom.png" alt="" class="block" />
 					</a>
 				</div>
 			</button>
@@ -54,7 +54,7 @@ const links = [
 					>
 				</span>
 			</a>
-			<a href="/cz/kontakt" class="button-primary"> Kontakt </a>
+			<a href="/en/kontakt" class="button-primary"> Contact </a>
 		</div>
 		<button
 			class="block md:hidden p-1 rounded-full hover:bg-black/15 focus:bg-black-15"
@@ -94,11 +94,14 @@ const links = [
 			}
 		</ul>
 		<div class="flex gap-6 justify-end items-center m-4">
-			<button class="w-5 h-auto"
-				><a href="/en/">
-					<img src="./../images/czech-republic.png" alt="" class="block" />
-				</a>
-			</button>
+			<div>
+				<button class="w-5 h-auto">
+					<a href="/cz/">
+						<img src="./../images/united-kingdom.png" alt="" class="block" />
+					</a>
+				</button>
+			</div>
+
 			<a href="https://www.facebook.com/people/rhodennycz/100057216858817/" target="_blank">
 				<span>
 					<svg class="lg:w-7 w-6 h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -109,32 +112,32 @@ const links = [
 					>
 				</span>
 			</a>
-			<a href="/cz/kontakt" class="button-primary"> Kontakt </a>
+			<a href="/en/contact" class="button-primary"> Contact </a>
 		</div>
 	</div>
+
+	<script lang="js">
+		const openButton = document.querySelector('[data-open-button]')
+		const closeButton = document.querySelector('[data-close-button]')
+		const sideBar = document.querySelector('[data-side-bar]')
+		const overlay = document.querySelector('[data-overlay]')
+
+		openButton.addEventListener('click', () => {
+			sideBar.classList.remove('translate-x-full')
+			sideBar.classList.add('translate-0-full')
+			overlay.classList.remove('hidden')
+		})
+
+		closeButton.addEventListener('click', () => {
+			sideBar.classList.remove('translate-0-full')
+			sideBar.classList.add('translate-x-full')
+			overlay.classList.add('hidden')
+		})
+
+		overlay.addEventListener('click', () => {
+			sideBar.classList.remove('translate-0-full')
+			sideBar.classList.add('translate-x-full')
+			overlay.classList.add('hidden')
+		})
+	</script>
 </header>
-
-<script lang="js">
-	const openButton = document.querySelector('[data-open-button]')
-	const closeButton = document.querySelector('[data-close-button]')
-	const sideBar = document.querySelector('[data-side-bar]')
-	const overlay = document.querySelector('[data-overlay]')
-
-	openButton.addEventListener('click', () => {
-		sideBar.classList.remove('translate-x-full')
-		sideBar.classList.add('translate-0-full')
-		overlay.classList.remove('hidden')
-	})
-
-	closeButton.addEventListener('click', () => {
-		sideBar.classList.remove('translate-0-full')
-		sideBar.classList.add('translate-x-full')
-		overlay.classList.add('hidden')
-	})
-
-	overlay.addEventListener('click', () => {
-		sideBar.classList.remove('translate-0-full')
-		sideBar.classList.add('translate-x-full')
-		overlay.classList.add('hidden')
-	})
-</script>

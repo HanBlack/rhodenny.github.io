@@ -1,0 +1,177 @@
+---
+import MainLayout from './../../layouts/MainLayout.astro'
+import ImageText from './../../components/ImageText.astro'
+import { translations } from '../../locales/translations'
+---
+
+<MainLayout>
+	<div class="w-full h-full flex flex-col items-center px-4 py-4">
+		<div class="flex flex-col lg:flex-row justify-center items-center lg:w-2/3 mx-auto py-4">
+			<p>
+				{translations.cz.vrh_vrh_a_undertitle}
+				Více informací o Hugovi najdete zde: <a
+					target="_blank"
+					class="underline"
+					href="https://www.kaweria.com/">https://www.kaweria.com</a
+				>
+			</p>
+		</div>
+		<div class="flex flex-col lg:flex-row justify-center items-center gap-4 py-4">
+			<img
+				src="./../../images/plagat_vrh_a_02.jpg"
+				alt=""
+				class="rounded-lg object-cover lg:h-[30rem] lg:w-[40rem] md:w-full"
+			/>
+			<img
+				src="./../../images/plagat_vrh_a.jpg"
+				alt=""
+				class="rounded-lg object-cover lg:h-[30rem] lg:w-[40rem] md:w-full"
+			/>
+		</div>
+		<ImageText text={translations.cz.hugo_father} image="./../../images/otec_huga_02.jpg" />
+		<ImageText
+			text={translations.cz.hugo_mother}
+			image="./../../images/hugo_matka.jpg"
+			order="right"
+		/>
+
+		<div class="flex flex-col justify-center items-center py-4">
+			<img src="./../../images/vrh_a_full_photo_01.jpg" alt="" class="w-2/3 rounded-lg" />
+		</div>
+		<div class="flex flex-col justify-center items-center py-8">
+			<p class="font-bold text-lg">Amos Adhiambo</p>
+			<div class="flex flex-col lg:flex-row items-center gap-4">
+				<p>Váha: 675 g</p>
+				<p>Standart</p>
+			</div>
+			<div
+				class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
+			>
+				<img src="./../../images/amos_vrh_a.jpg" alt="" />
+				<img src="./../../images/amos_vrh_a_02.jpg" alt="" />
+				<img src="./../../images/amos_vrh_a_03.jpg" alt="" />
+			</div>
+			<img src="./../../images/amos_vrh_a_04.jpg" alt="" class="rounded-lg object-cover lg:w-1/2" />
+		</div>
+		<div class="flex flex-col justify-center items-center py-8">
+			<p class="font-bold text-lg">Alfie Sabiha</p>
+			<div class="flex flex-col lg:flex-row items-center gap-4">
+				<p>Váha: 590g</p>
+				<p>Standart</p>
+			</div>
+			<div
+				class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
+			>
+				<img src="./../../images/alfie_vrh_a.jpg" alt="" />
+				<img src="./../../images/alfie_vrh_a_02.jpg" alt="" />
+				<img src="./../../images/alfie_vrh_a_03.jpg" alt="" style="object-position: 50% 30%" />
+				<img src="./../../images/alfie_vrh_a_05.jpg" alt="" />
+			</div>
+			<img
+				src="./../../images/alfie_vrh_a_04.jpg"
+				alt=""
+				class="rounded-lg object-cover lg:w-2/3"
+			/>
+		</div>
+		<div class="flex flex-col justify-center items-center py-8">
+			<p class="font-bold text-lg">Agnes Yunna</p>
+			<div class="flex flex-col lg:flex-row items-center gap-4">
+				<p>Váha: 580g</p>
+				<p>Standart</p>
+			</div>
+			<div
+				class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
+			>
+				<img src="./../../images/agnes_vrh_a_01.jpg" alt="" />
+				<img src="./../../images/agnes_vrh_a_02.jpg" alt="" />
+				<img src="./../../images/agnes_vrh_a_03.jpg" alt="" />
+			</div>
+
+			<img
+				src="./../../images/agnes_vrh_a_04.jpg"
+				alt=""
+				class="rounded-lg object-cover lg:w-2/3"
+			/>
+		</div>
+		<div class="flex flex-col justify-center items-center py-8">
+			<p class="font-bold text-lg">Aron Black</p>
+			<div class="flex flex-col lg:flex-row items-center gap-4">
+				<p>605g</p>
+				<p>Standart</p>
+			</div>
+			<div
+				class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
+			>
+				<img src="./../../images/aron_vrh_a_01.jpg" alt="" />
+				<img src="./../../images/aron_vrh_a_02.jpg" alt="" />
+				<img src="./../../images/aron_vrh_a_03.jpg" alt="" />
+				<img src="./../../images/aron_vrh_a_05.jpg" alt="" />
+			</div>
+			<img
+				src="./../../images/aron_vrh_a_04.jpg"
+				alt=""
+				class="rounded-lg md:w-11/12 object-cover lg:w-1/2"
+			/>
+		</div>
+		<div class="flex flex-col justify-center items-center py-8">
+			<p class="font-bold text-lg">Alvin Shadow</p>
+			<div class="flex flex-col lg:flex-row items-center gap-4">
+				<p>550g</p>
+				<p>Standart</p>
+			</div>
+			<div
+				class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
+			>
+				<img src="./../../images/alvin_vrh_a_01.jpg" alt="" />
+				<img src="./../../images/alvin_vrh_a_02.jpg" alt="" />
+				<img src="./../../images/alvin_vrh_a_03.jpg" alt="" />
+				<img src="./../../images/alvin_vrh_a_05.jpg" alt="" />
+			</div>
+			<img
+				src="./../../images/alvin_vrh_a_04.jpg"
+				alt=""
+				class="rounded-lg md:w-11/12 object-cover lg:w-1/2"
+			/>
+		</div>
+		<div class="flex flex-col justify-center items-center py-8">
+			<p class="font-bold text-lg">Amali Joy</p>
+			<div class="flex flex-col lg:flex-row items-center gap-4">
+				<p>690g</p>
+				<p>Standart</p>
+			</div>
+			<div
+				class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
+			>
+				<img src="./../../images/amali_vrh_a_01.jpg" alt="" />
+				<img src="./../../images/amali_vrh_a_02.jpg" alt="" />
+				<img src="./../../images/amali_vrh_a_03.jpg" alt="" style="object-position: 50% 25%" />
+			</div>
+
+			<img
+				src="./../../images/amali_vrh_a_04.jpg"
+				alt=""
+				class="rounded-lg md:w-11/12 object-cover lg:w-1/2"
+			/>
+		</div>
+		<div class="flex flex-col justify-center items-center py-8">
+			<p class="font-bold text-lg">Adwin Badu</p>
+			<div class="flex flex-col lg:flex-row items-center gap-4">
+				<p>510g</p>
+				<p>Standart</p>
+			</div>
+			<div
+				class="flex flex-col lg:flex-row justify-center items-center *:object-cover *:rounded-lg py-4 gap-4 *:w-full *:max-w-xs *:aspect-[4/3]"
+			>
+				<img src="./../../images/adwin_vrh_a_01.jpg" alt="" />
+				<img src="./../../images/adwin_vrh_a_02.jpg" alt="" />
+				<img style="object-position: 50% 35%" src="./../../images/adwin_vrh_a_03.jpg" alt="" />
+				<img src="./../../images/adwin_vrh_a_04.jpg" alt="" />
+			</div>
+			<img
+				src="./../../images/adwin_vrh_a_05.jpg"
+				alt=""
+				class="rounded-lg md:max-w-11/12 object-cover lg:w-2/3"
+			/>
+		</div>
+	</div>
+</MainLayout>

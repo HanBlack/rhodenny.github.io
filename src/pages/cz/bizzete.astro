@@ -1,0 +1,84 @@
+---
+import Carousel from './../../components/Carousel.astro'
+import DogLayout from './../../layouts/DogLayout.astro'
+
+const images = [
+	'./../../images/bizzete_nasi_psi_01.jpg',
+	'./../../images/bizzete_nasi_psi_02.jpg',
+	'./../../images/bizzete_nasi_psi_03.jpg',
+	'./../../images/bizzete_nasi_psi_04.jpg',
+	'./../../images/bizzete_nasi_psi_05.jpg',
+	'./../../images/bizzete_nasi_psi_06.jpg'
+]
+---
+
+<DogLayout title="Bizzete">
+	<div
+		slot="dog_info"
+		class="flex flex-col lg:justify-center lg:items-end items-center lg:gap-2 gap-2 lg:w-1/4 w-full"
+	>
+		<p>Bizzete Charlie</p>
+		<p>Datum narození: 13.10.2020</p>
+		<p>Výška: 63cm</p>
+		<p>Váha: 37kg</p>
+		<p>Plnochrupý, nůžkový kus</p>
+		<p>Pšeničná barva</p>
+		<p>HD: 0/0</p>
+		<p>ED: 0/0</p>
+		<p>OCD: OCD - negativní</p>
+		<p>SA - negativní</p>
+		<p>Ridge gene - R/R</p>
+		<p>DM: M/N</p>
+		<p>JME: N/n</p>
+		<p>D-locus: D/D</p>
+		<p>B-locus: B/b</p>
+		<p>Hemofilie: A/B - čistá</p>
+		<p>Bonitace byla 16.06.2023 - Elitní třída</p>
+	</div>
+	<div slot="carousel" class="lg:w-3/4 w-full">
+		<Carousel images={images} />
+	</div>
+	<div
+		slot="mother_info"
+		class="flex flex-col lg:justify-center lg:gap-4 gap-2 px-4 lg:p-0 whitespace-nowrap"
+	>
+		<p>Matka: Enny Joy of Ashanti of South Moravia</p>
+		<p>Datum narození: 25.06.2015</p>
+		<p>Výška: 65cm</p>
+		<p>Váha: 38kg</p>
+		<p>Plnochrupý, nůžkový kus</p>
+		<p>Pšeničná barva</p>
+		<p>HD: A/A</p>
+		<p>ED: 0/0</p>
+		<p>OCD - negativní</p>
+	</div>
+	<img
+		slot="mother_image"
+		src="./../../images/enny_nasi_psi_01.jpg"
+		alt=""
+		class="max-w-sm aspect-square object-top object-cover rounded-lg"
+	/>
+	<div
+		slot="father_info"
+		class="flex flex-col justify-center lg:gap-4 gap-2 md:items-end px-4 lg:p-0 whitespace-nowrap md:order-1"
+	>
+		<p>Otec: Bayo Kendi Kaweria (Charlie)</p>
+		<a class="underline" target="_blank" href="https://www.kaweria.com/"
+			>Informace o Charlie najdete ZDE</a
+		>
+	</div>
+	<img
+		slot="father_image"
+		src="./../../images/kemdi_bizzete_02.jpg"
+		class="max-w-sm aspect-square object-top object-cover rounded-lg"
+		alt=""
+	/>
+</DogLayout>
+
+<div class="flex flex-col justify-center items-center py-4">
+	<img
+		src="./../../images/bizzete_nasi_psi_certifikat.jpg"
+		alt=""
+		class="rounded-lg object cover w-1/2"
+	/>
+</div>
