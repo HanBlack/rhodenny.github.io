@@ -33,5 +33,25 @@ import MainLayout from './MainLayoutEn.astro'
 				</div>
 			</div>
 		</div>
+		<div class="flex flex-col xl:flex-row justify-center items-center w-full gap-8">
+			<div class="flex-1 flex flex-col md:flex-row justify-end items-start gap-4 lg:gap-8">
+				<div class="flex flex-col lg:justify-center lg:gap-4 gap-2 px-4 lg:p-0 whitespace-nowrap">
+					<slot name="great-mother_info" />
+				</div>
+				<div class="flex justify-center items-center">
+					<slot name="great-mother_image" />
+				</div>
+			</div>
+			<div class="flex-1 flex flex-col md:flex-row justify-start items-start gap-4 lg:gap-8">
+				<div
+					class="flex flex-col justify-center lg:gap-4 gap-2 md:items-start px-4 lg:p-0 whitespace-nowrap md:order-1"
+				>
+					<slot name="great-father_info" />
+				</div>
+				<div class="flex justify-center items-center">
+					<slot name="great-father_image" />
+				</div>
+			</div>
+		</div>
 	</div>
 </MainLayout>

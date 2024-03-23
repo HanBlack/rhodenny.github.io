@@ -9,7 +9,7 @@ const images = ['./../../images/Berlin_nasi_psi_02.jpg', './../../images/Berlin_
 <DogLayout title="Benny">
 	<div
 		slot="dog_info"
-		class="flex flex-col lg:justify-center lg:items-end md:items-end items-center lg:gap-2 gap-1 lg:w-1/3 w-full"
+		class="flex flex-col lg:justify-center lg:items-end md:items-end items-center lg:gap-2 gap-1 lg:w-1/3 w-full py-16"
 	>
 		<p>Berlin Mattien Rhodenny (Benny)</p>
 		<p>Date of Birth: 13.10.2020</p>
@@ -24,7 +24,7 @@ const images = ['./../../images/Berlin_nasi_psi_02.jpg', './../../images/Berlin_
 		<p>LTV - negative</p>
 		<p>L7 - normal</p>
 		<p>Ridge gene - R/R</p>
-		<p>DM: M/N</p>
+		<p>DM: N/N</p>
 		<p>JME: N/N</p>
 		<p>D-locus: D/D</p>
 		<p>B-locus: B/b</p>
@@ -35,10 +35,125 @@ const images = ['./../../images/Berlin_nasi_psi_02.jpg', './../../images/Berlin_
 	<div slot="carousel" class="lg:w-3/4 w-full">
 		<Carousel images={images} />
 	</div>
+	<div
+		slot="mother_info"
+		class="flex flex-col lg:justify-center lg:gap-4 gap-2 px-4 lg:p-0 whitespace-nowrap md:items-end"
+	>
+		<p>Dam: Enny Joy of Ashanti South Moravia</p>
+		<p>Date of Birth: 25.06.2015</p>
+		<p>Height: 65cm</p>
+		<p>Weight: 39kg</p>
+		<p>Full dentition with scissor bite</p>
+		<p>Wheat colour</p>
+		<p>HD: A/A</p>
+		<p>ED: 0/0</p>
+		<p>OCD - negative</p>
+	</div>
+	<img
+		slot="mother_image"
+		src="./../../images/enny_nasi_psi_01.jpg"
+		alt=""
+		class="max-w-sm aspect-square object-top object-cover rounded-lg"
+	/>
+	<div
+		slot="father_info"
+		class="flex flex-col justify-center lg:gap-4 gap-2 md:items-start px-4 lg:p-0 whitespace-nowrap md:order-1"
+	>
+		<p>Sire: Bayo Kendi Kaweria (Charlie)</p>
+		<a class="underline" target="_blank" href="https://www.kaweria.com/"
+			>Informations about Charlie can be found HERE</a
+		>
+	</div>
+	<img
+		slot="father_image"
+		src="./../../images/kemdi_bizzete_02.jpg"
+		class="max-w-sm aspect-square object-top object-cover rounded-lg"
+		alt=""
+	/>
 </DogLayout>
-<div class="flex flex-col lg:flex-row justify-center items-center gap-4 py-2">
+
+<div class="flex flex-col lg:flex-row justify-center items-center lg:gap-8 md:gap-4 pb-4">
+	<div class="flex flex-col justify-center items-center lg:gap-4 md:gap-2">
+		<p>Ashanti South Moravia</p>
+		<img
+			src="./../../images/ashanti_nasi_psi.jpg"
+			class="max-w-60 aspect-square object-top object-cover rounded-lg"
+			alt=""
+		/>
+	</div>
+	<div class="flex flex-col justify-center items-center lg:gap-4 md:gap-2">
+		<p>Kifahari Kuzaa Eros Dahabu</p>
+		<img
+			src="./../../images/kifahari_nasi_psi.jpg"
+			class="max-w-60 aspect-square object-top object-cover rounded-lg"
+			alt=""
+		/>
+	</div>
+	<div class="flex flex-col justify-center items-center lg:gap-4 md:gap-2">
+		<p>Tusani Jolly Joelin</p>
+		<img
+			src="./../../images/hugo_matka.jpg"
+			class="max-w-60 aspect-square object-top object-cover rounded-lg"
+			alt=""
+		/>
+	</div>
+	<div class="flex flex-col justify-center items-center lg:gap-4 md:gap-2">
+		<p>Bayo Bombay of Argos</p>
+		<img
+			src="./../../images/bayo_bombay.jpg"
+			class="max-w-60 aspect-square object-top object-cover rounded-lg"
+			alt=""
+		/>
+	</div>
+</div>
+<div class="flex flex-col justify-center items-center lg:py-8 md:py-4">
 	<img
 		src="./../../images/Berlin_nasi_psi_01.jpg"
+		alt=""
+		class="flex flex-col lg:w-1/3 w-full rounded-lg"
+	/>
+	<div class="text-xl lg:text-2xl lg:pt-4">
+		<p>Pedigree certificate of the dog</p>
+	</div>
+	<div class="flex flex-col lg:py-4 md:pt-4 justify-center items-center gap-4">
+		<a
+			target="_blank"
+			download="dokumenty_01.jpg"
+			href="https://drive.google.com/file/d/1Ftek8iQvwfPnK9ip10HlBOt6F0Uc8z_i/view?usp=sharing"
+			class="button-secondary flex gap-2 items-center w-fit"
+		>
+			<span>View</span><svg
+				class="w-4 h-auto"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 256 256"
+				><rect width="256" height="256" fill="none"></rect><line
+					x1="40"
+					y1="128"
+					x2="216"
+					y2="128"
+					fill="none"
+					stroke="currentColor"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="16"></line><polyline
+					points="144 56 216 128 144 200"
+					fill="none"
+					stroke="currentColor"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="16"></polyline></svg
+			></a
+		>
+		<img
+			src="./../../images/berlin_prukaz-1.png"
+			alt=""
+			class="md:w-full 2 lg:w-1/3 rounded-lg mx-auto"
+		/>
+	</div>
+</div>
+<div class="flex flex-col lg:flex-row justify-center items-center gap-4 py-2">
+	<img
+		src="./../../images/zprava_bertik.jpg"
 		alt=""
 		class="flex flex-col lg:w-1/3 w-full rounded-lg"
 	/>
@@ -56,14 +171,6 @@ const images = ['./../../images/Berlin_nasi_psi_02.jpg', './../../images/Berlin_
 	/>
 	<img
 		src="./../../images/zprava_bertik-3.jpg"
-		alt=""
-		class="flex flex-col lg:w-1/3 w-full rounded-lg"
-	/>
-</div>
-
-<div class="flex flex-col lg:flex-row justify-center items-center gap-4 py-2">
-	<img
-		src="./../../images/zprava_bertik.jpg"
 		alt=""
 		class="flex flex-col lg:w-1/3 w-full rounded-lg"
 	/>
