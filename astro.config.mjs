@@ -15,4 +15,5 @@ export default defineConfig({
   integrations: [astroI18next(), tailwind()],
   site: BASE_URL,
   server: {port: SERVER_PORT},
+  base: '/rhodenny.github.io'
 });
