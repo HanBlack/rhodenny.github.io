@@ -17,12 +17,12 @@
         color: rgb(56, 14, 94)
     }
 }
-.text-citat {
+.farsan-regular {
     font-family: "Farsan", cursive;
     font-weight: 400;
     font-style: normal;
-}
-
+  }
+  
 .button-primary {
     @apply px-3 py-1 bg-purple-400 text-white rounded-full hover:brightness-110
 }
