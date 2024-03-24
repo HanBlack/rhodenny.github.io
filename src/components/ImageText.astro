@@ -16,7 +16,8 @@ if (order === 'right') {
 ---
 
 <div
-	class="max-w-screen-lg flex flex-col md:flex-row gap-4 md:gap-10 justify-center items-center md:aspect-video rounded-xl"
+	class="max-w-screen-lg flex flex-col md:flex-row gap-4 md:gap-10
+	pt-4 justify-center items-center md:aspect-video rounded-xl"
 >
 	<div class={`max-w-xs flex justify-end items-center ${order} ${image2 ? 'gap-4' : ''}`}>
 		<img src={image} class="block
@@ -33,7 +34,7 @@ if (order === 'right') {
 		}
 	</div>
 
-	<div class="max-w-md flex justify-start items-center">
+	<div class="max-w-md flex justify-start items-center w-11/12 py-2">
 		{text}
 	</div>
 </div>

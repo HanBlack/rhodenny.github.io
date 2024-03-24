@@ -9,7 +9,7 @@ const images = ['./../../images/Berlin_nasi_psi_02.jpg', './../../images/Berlin_
 <DogLayout title="Benny">
 	<div
 		slot="dog_info"
-		class="flex flex-col lg:justify-center lg:items-end md:items-end items-center lg:gap-2 gap-1 lg:w-1/3 w-full py-16"
+		class="flex flex-col lg:justify-center lg:items-end md:items-end items-center lg:gap-2 gap-1 lg:w-1/3 w-full"
 	>
 		<p>Berlin Mattien Rhodenny (Benny)</p>
 		<p>Datum narození: 13.10.2020</p>
@@ -35,6 +35,7 @@ const images = ['./../../images/Berlin_nasi_psi_02.jpg', './../../images/Berlin_
 	<div slot="carousel" class="lg:w-3/4 w-full">
 		<Carousel images={images} />
 	</div>
+
 	<div
 		slot="mother_info"
 		class="flex flex-col lg:justify-center lg:gap-4 gap-2 px-4 lg:p-0 whitespace-nowrap md:items-end"
@@ -57,7 +58,7 @@ const images = ['./../../images/Berlin_nasi_psi_02.jpg', './../../images/Berlin_
 	/>
 	<div
 		slot="father_info"
-		class="flex flex-col justify-center lg:gap-4 gap-2 md:items-start px-4 lg:p-0 whitespace-nowrap md:order-1"
+		class="flex flex-col justify-center lg:gap-4 gap-2 md:items-start lg:p-0 whitespace-nowrap md:order-1"
 	>
 		<p>Otec: Bayo Kendi Kaweria (Charlie)</p>
 		<a class="underline" target="_blank" href="https://www.kaweria.com/"
