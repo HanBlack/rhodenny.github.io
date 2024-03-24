@@ -2,12 +2,12 @@
 const currentPath = new URL(Astro.request.url).pathname
 
 const links = [
-	{ text: 'About us', href: '/en/o_nas' },
-	{ text: 'Our dogs', href: '/en/nasi_psi' },
-	{ text: 'Puppies', href: '/en/vrh' },
-	{ text: 'Stud dogs', href: '/en/kryci_psi' },
-	{ text: 'Canisterapy', href: '/en/canisterapie' },
-	{ text: 'Documents', href: '/en/dokumenty' }
+	{ text: 'About us', href: `${import.meta.env.BASE_URL}/en/o_nas` },
+	{ text: 'Our dogs', href: `${import.meta.env.BASE_URL}/en/nasi_psi` },
+	{ text: 'Puppies', href: `${import.meta.env.BASE_URL}/en/vrh` },
+	{ text: 'Stud dogs', href: `${import.meta.env.BASE_URL}/en/kryci_psi` },
+	{ text: 'Canisterapy', href: `${import.meta.env.BASE_URL}/en/canisterapie` },
+	{ text: 'Documents', href: `${import.meta.env.BASE_URL}/en/dokumenty` }
 ]
 ---
 
