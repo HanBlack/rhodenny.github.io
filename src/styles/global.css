@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +16,12 @@
         color: rgb(56, 14, 94)
     }
 }
-.farsan-regular,
-i {
-    font-family: "Farsan", cursive, sans-serif; /* Add fallback fonts here */
+.patrick-hand-regular {
+    font-family: "Patrick Hand", sans-serif;
     font-weight: 400;
     font-style: normal;
-}
+  }
+  
   
 .button-primary {
     @apply px-3 py-1 bg-purple-400 text-white rounded-full hover:brightness-110
