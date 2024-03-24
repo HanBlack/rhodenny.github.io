@@ -17,11 +17,12 @@
         color: rgb(56, 14, 94)
     }
 }
-.farsan-regular {
-    font-family: "Farsan", cursive;
+.farsan-regular,
+i {
+    font-family: "Farsan", cursive, sans-serif; /* Add fallback fonts here */
     font-weight: 400;
     font-style: normal;
-  }
+}
   
 .button-primary {
     @apply px-3 py-1 bg-purple-400 text-white rounded-full hover:brightness-110
