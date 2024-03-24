@@ -1,0 +1,32 @@
+---
+import './../styles/global.css'
+
+import Header from '../components/Header.astro'
+import HeaderIndexCz from '../components/HeaderIndexCz.astro'
+
+let { title } = Astro.props
+title = title ? 'Rhodenny - ' + title : 'Rhodenny'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="min-h-screen overflow-auto flex flex-col">
+		<div class="fixed inset-0 bg-black/10 backdrop-blur hidden z-20" data-overlay></div>
+		<div
+			class="fixed inset-0 bg-gradient-to-r from-gray-200 via-50% via-stone-100 to-purple-300 -z-20"
+		>
+		</div>
+		<HeaderIndexCz />
+		<slot />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+	</body>
+</html>
